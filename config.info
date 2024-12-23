@@ -1,0 +1,39 @@
+# This file must be included in all service folders under the name "config.info" 
+
+# Current status of the service (REQUIRED ENTRY):
+#   MAIN: service version linked to when version number is not specified, there can only be one MAIN per service
+#   ACTIVE: older version of a service that should not be showed in service listing but still works
+#   DISCONTINUED: service that does not have a service page and must not be submittable (eg. no webface.cf)
+STATUS: ACTIVE
+
+# Service name (REQUIRED ENTRY) and version
+NAME: Service Template
+VERSION: 0.0
+
+# Major classification (Services,Bioinformatics Tools or Datasets)(REQUIRED ENTRY) and type
+CLASS: Services
+TYPE: Miscellaneous
+
+# Specify link if service is found on another server (leave empty if not)
+LINK:
+
+# Short description (REQUIRED ENTRY)
+DESCRIPTION: Template for services
+
+# Software download link (if applicable)
+DOWNLOAD:
+
+# Release or update date
+DATE: 01/01/2000
+
+# Contact information for scientific or technical help
+AUTHORNAME: Jens Hansen
+AUTHORMAIL: jens@hansen.com
+TECHNAME: Support
+TECHMAIL: health-master@dtu.dk
+
+# If set to yes, then the service index.php will not be changed (leave empty if not)
+STATICINDEX:
+
+# Change pixel width of service webpage (leave empty for default)
+PAGEWIDTH:
