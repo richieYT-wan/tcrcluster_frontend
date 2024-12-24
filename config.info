@@ -7,18 +7,18 @@
 STATUS: ACTIVE
 
 # Service name (REQUIRED ENTRY) and version
-NAME: Service Template
-VERSION: 0.0
+NAME: TCRcluster
+VERSION: 1.0
 
 # Major classification (Services,Bioinformatics Tools or Datasets)(REQUIRED ENTRY) and type
 CLASS: Services
-TYPE: Miscellaneous
+TYPE: Immunological features
 
 # Specify link if service is found on another server (leave empty if not)
 LINK:
 
 # Short description (REQUIRED ENTRY)
-DESCRIPTION: Template for services
+DESCRIPTION: TCR Clusters
 
 # Software download link (if applicable)
 DOWNLOAD:
