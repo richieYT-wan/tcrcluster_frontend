@@ -9,18 +9,17 @@
 
     }
 
-    function paste_expr_sample(){
-      var seq="RRASKARLP,RRASKALLP,HLA-C0602,0.00199998\nSSGFCNIAVK,SSGFRNIAVK,HLA-A0301,8.35072\nGIIPPSVQV,GKIPPSVQV,HLA-A0201,105.084\nMASISSFLL,MASISSSLL,HLA-B3501,6.201\nLQTIKDIASPI,LQTIKDIASAI,HLA-B5201,36.9909"
-
+    function with_label_sample(){
+      var seq="DRGSQS,IYSNGD,AVGMNNDMR,LNHDA,SQIVND,ASSTGGLAGEQY,ELAGIGILTV\nDRGSQS,IYSNGD,AVPSGNTPLV,SNHLY,FYNNEI,ASSEYGGGVAGELF,ELAGIGILTV\nDRGSQS,IYSNGD,ALGGGGADGLT,MNHEY,SMNVEV,ASSFSSNNEQF,ELAGIGILTV\nDRGSQS,IYSNGD,AVNSGNQFY,MNHEY,SMNVEV,ASRPTGMGQPQH,ELAGIGILTV\nSVFSS,VVTGGEV,AIPQKAAGNKLT,MDHEN,SYDVKM,ASSFPQFVTGLPEAF,ELAGIGILTV\nNSMFDY,ISSIKDK,AASAFLGGSEKLV,LNHNV,YYDKDF,ATSERGDLNFGTDTQY,GILGFVFTL\nNSASDY,IRSNMDK,AENEGGGSQGNLI,LNHDA,SQIVND,ASSLYASYEQY,GILGFVFTL\nSVFSS,VVTGGEV,AGGGDGGSQGNLI,LNHDA,SQIVND,ASSIRSGVEQY,GILGFVFTL\nSVFSS,VVTGGEV,AGGRHSGGGADGLT,MNHNY,SVGAGI,ASSYSRPGLSNQPQH,GILGFVFTL\nTSESDYY,QEAYKQQN,AYRADSNYQLI,MNHEY,SVGAGI,ASSYNVRDGDYGYT,GILGFVFTL\nDSASNY,IRSNVGE,AAKEGYSTLT,SGHNS,FNNNVP,ASSFSGNTGELF,RAKFKQLL\nDSASNY,IRSNVGE,AASETSYDKVI,MNHEY,SVGAGI,ASSPIPGLQPSEQAETQY,RAKFKQLL\nDSASNY,IRSNVGE,AASETSYDKVI,SEHNR,FQNEAQ,ASSLAGSYEQY,RAKFKQLL\nYGATPY,YFSGDTLV,AVTRDDKII,SGHDT,YYEEEE,ASSLRDGSEAF,RAKFKQLL\nNSASQS,VYSSG,VVNIDNARLM,SQVTM,ANQGSEA,SVGQGPYEQY,RAKFKQLL\nNSASQS,VYSSG,VVNNNNDMR,SGHNS,FNNNVP,ASGEANTGELF,YLQPRTFLL\nNSASQS,VYSSG,VVNRDDKII,SGHVS,FQNEAQ,ASSDSYGYT,YLQPRTFLL\nNSASQS,VYSSG,VVNIPQAGTALI,DFQATT,SNEGSKA,SARGLAEANTGELF,YLQPRTFLL\nNSASQS,VYSSG,VVNGADKII,SEHNR,FQNEAQ,ASSPDIEAF,YLQPRTFLL\nYSGSPE,HISR,ALSYSSASKII,MDHEN,SYDVKM,ASSTMVGGKGEKLF,YLQPRTFLL"
 
       document.getElementById('fasta').value=seq
       document.getElementById('sd3').checked=true
 
     }
 
-    function paste_noexpr_sample(){
+    function no_label_sample(){
 
-      var seq="SVLDVGVAV,SVLDVGGAV,HLA-A0201\nLLQICERIPTI,LLQVCERIPTI,HLA-A0201\nPLLPALSPGL,PLLPALSPGS,HLA-A0201\nIVFGVSQPDV,IVSGVSQPDV,HLA-A0201\nSLLMWITQAL,SLLMWITQCF,HLA-A0201"
+      var seq="DRGSQS,IYSNGD,ALGGGGADGLT,MNHEY,SMNVEV,ASSFSSNNEQF\nDRGSQS,IYSNGD,AVQGSTLT,MGHRA,YSYEKL,ASSQGGLTGEGYT\nDRGSQS,IYSNGD,AVSNNNDMR,MGHRA,YSYEKL,ASSQDRWLSGQPQH\nDRGSQS,IYSNGD,AAPGGATNKLI,MNHEY,SVGAGI,ASSYSTPSWTDTQY\nYGGTVN,YFSGDPLV,AVPNTNAGKST,SGHNT,YYREEE,ASTLRGTGVETQY\nTTLSN,LVKSGEV,AGSPIYNQGGKLI,LGHNA,YSLEER,ASSQEWGINEKLF\nTSGFNG,NVLDGL,AVSDSNYQLI,LNHDA,SQIVND,ASSIYSNQPQH\nYSGSPE,HISR,ALRVMNRDDKII,LNHDA,SQIVND,ASSTKDGGTGELF\nTSENNYY,QEAYKQQN,AFMTNAGGTSYGKLT,PRHDT,FYEKMQ,ASSLMRGGTYNSPLH\nDSSSTY,IFSNMDM,AERVTGGGNKLT,MGHRA,YSYEKL,ASSQDPGDEQF\nVSPFSN,MTFSENT,VGYTNAGKST,SGHTA,FQGNSA,ASSLVVVNTEAF\nYGATPY,YFSGDTLV,AVGTARLM,MNHEY,SMNVEV,ASSLPGTGGSPLH\nDSASNY,IRSNVGE,AAMETSYDKVI,MNHEY,SVGEGT,ASGMTGLTSEQY\nKALYS,LLKGGEQ,GTRYISFTGGGNKLT,SGHNS,FNNNVP,ASSFSGNTGELF\nDSASNY,IRSNVGE,AASEGAPDKLI,SGHVS,FNYEAQ,ASSFQGLVSSYNEQF\nTSGFNG,NVLDGL,AVMDSNYQLI,DFQATT,SNEGSKA,SARVLTSGETYEQY\nNSASQS,VYSSG,VVNRDDKII,SGHVS,FQNEAQ,ASSDSYGYT\nSSYSPS,YTSAATLV,VVSDPDTGTYKYI,SNHLY,FYNNEI,ASRDRGNYYGYT\nATGYPS,ATKADDK,ALRRGATDSWGKLQ,SGHVS,FQNEAQ,ASSDQNTGELF\nTSINN,IRSNERE,ATDASEAAGNKLT,SGDLS,YYNGEE,ASSAGSPAYEQY"
 
       document.getElementById('fasta').value=seq
       document.getElementById('sd123').checked=true
@@ -40,8 +39,8 @@
   <input type=hidden name=configfile value="/var/www/services/services/ICERFIRE-1.0/webface.cf">
 
   <p>
-    Paste in the sequences for the mutant, wild-type, and a third column containing the HLA alleles (in the format HLA-XYYZZ, ex: HLA-A0201). Sequences should be 8 to 14 amino acids long.
-    <br>Additionally, the expression values of each data point can be provided by the user, if available and the option below is selected. If no expression values are provided and expression is included in the model, expression values will be queried from a reference dataset (TCGA pan-can).
+    Paste in the sequences for all CDR chains (A1,A2,A3,B1,B2,B3), and an optional label column. The leading C and trailing F amino acids must be clipped from A3 and B3.
+    <br>Additionally, the label of each data point can be provided by the user, if available.
     <br>Alternatively, load and example input or upload a file from your local machine.
     <br>Each column should be comma separated.
     <br>
@@ -49,14 +48,14 @@
   </p>
   <p>For an overview of the method and citation information, see Abstract tab.</P>
 
-  <p><b>Sequence submission</b></p>
+  <p><b>Sequences submission</b></p>
   <p><i><b>Paste</b></i> the sequence(s): </p></b>
   <textarea id="fasta" name="pastefile" class="form-control" ng-model="fasta"
     placeholder="Paste data here" rows=10 cols=64></textarea>
   <p>
     or <i><b>load</b></i> some sample data:
-    <input type="button" value="With expression values" onclick="paste_expr_sample()" size=64>
-    <input type="button" value="Without expression values" onclick="paste_noexpr_sample()" size=64>
+    <input type="button" value="With labels" onclick="with_label_sample()" size=64>
+    <input type="button" value="Without labels" onclick="no_label_sample()" size=64>
     <br>
     or <i><b>upload</b></i> a local file: <input name="uploadfile" size=64 type="file">
     <br>

@@ -209,7 +209,12 @@ footer: /var/www/services/output_footer.html
 # fastapaste SEQNAME,SEQ EMPTY VALUE
 # is always assumed for compatability reasons.
 
-# TYPE NAME OPTION VAL    DEFAULT DEFAULTVALUE
-fastafile       SEQSUB          EMPTY   VALUE   default FILTER repl;X;legal;ATGCatgc;maxseq;1;maxres;100000;maxsize;100000;minres;200
-fastapaste      SEQNAME,SEQ     EMPTY   VALUE   default FILTER repl;X;legal;ATGCatgc;maxseq;1;maxres;100000;maxsize;100000;minres;200
+# TYPE         NAME            OPTION       VAL     DEFAULT DEFAULTVALUE [ FILTER filter ]
+textarea       pastefile       --infile     VALUE
+file           uploadfile      --infile     VALUE
+radio          model           --model      VALUE # Handling model selection
+radio          threshold_type  --threshold  VALUE # Handling threshold settings: Uses default or allows for custom input
+text           custom_threshold --t_value   VALUE # Custom threshold value is optional and depends on the threshold_type setting
+
+
 #radio thing -s VALUE default -s hum
