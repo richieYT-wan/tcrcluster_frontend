@@ -62,7 +62,7 @@
   Include expression in the model (Recommended):
   <input type="radio" name="add_expr" value="yes" checked> Yes &nbsp
   <input type="radio" name="add_expr" value="no"> No
-  <input type="radio" name="add_expr" value="test"> No
+  <input type="radio" name="add_expr" value="test"> xd
   <br>
   <!-- <input type="checkbox" name="usr_expr" id="usr_expr">  -->
   Use user-provided expression values:
