@@ -27,6 +27,12 @@
 
 
     }
+
+    function toggleThresholdInput(isCustom) {
+    document.getElementById('thresholdInput').style.display = isCustom ? 'block' : 'none';
+
+    }
+
 </script>
 <h2>Submit data</h2>
 <hr>
@@ -59,24 +65,29 @@
   <br>
   <h3>Options</h3>
 
-  Include expression in the model (Recommended):
-  <input type="radio" name="add_expr" value="yes" checked> Yes &nbsp
-  <input type="radio" name="add_expr" value="no"> No
-  <input type="radio" name="add_expr" value="test"> xd
+  VAE model:
+  <input type="radio" name="model" value="osnotrp"> One Stage (No Triplet)
+  <input type="radio" name="model" value="oscstrp"> One Stage (Cosine Triplet)
+  <input type="radio" name="model" value="tsnotrp"> Two Stages (No Triplet)
+  <input type="radio" name="model" value="tscstrp" checked> Two Stages (Cosine Triplet)
   <br>
   <!-- <input type="checkbox" name="usr_expr" id="usr_expr">  -->
-  Use user-provided expression values:
-  <input type="radio" name="usr_expr" value="yes"> Yes &nbsp
-  <input type="radio" name="usr_expr" value="no" checked> No
-  <br><br>
+  <!-- New Threshold Section -->
+  <h3>Threshold Options</h3>
+  <p>
+    Set a threshold:
+    <input type="radio" name="threshold_type" value="default" checked onclick="toggleThresholdInput(false)"> Use default (Optimisation)
+    <input type="radio" name="threshold_type" value="custom" onclick="toggleThresholdInput(true)"> Set manually
+  </p>
+  <p id="thresholdInput" style="display:none;">
+    Enter your threshold value: <input type="number" name="custom_threshold" min="0.01" step="0.01" placeholder="Enter value">
+  </p>
 
-  <input type="submit" class="btn btn-success" ng-disabled="invalidForm()" value="Submit"
-    id="submitBtn" />
-  <input type="reset" class="btn btn-default" id="resetBtn"></a>
-
-  <div style="margin: 15px;"></div>
+  <input type="submit" class="btn btn-success" ng-disabled="invalidForm()" value="Submit" id="submitBtn" />
+  <input type="reset" class="btn btn-default" id="resetBtn">
+</form>
 
   <h3>Cite</h3>
-Yat-tsai Richie Wan, Zeynep Koşaloğlu‐Yalçın, Bjoern Peters, Morten Nielsen, A large-scale study of peptide features defining immunogenicity of cancer neo-epitopes, NAR Cancer, Volume 6, Issue 1, March 2024, zcae002, https://doi.org/10.1093/narcan/zcae002
-<a href="https://academic.oup.com/narcancer/article/6/1/zcae002/7591107" target="_blank">Read the full article here</a>
+Yat-tsai Richie Wan, Morten Nielsen ; Placeholder
+<a href="https://placeholder.ch" target="_blank">Read the full article here</a>
 </a>
