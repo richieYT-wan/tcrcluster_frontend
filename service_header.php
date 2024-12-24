@@ -1,1 +1,1 @@
-<p> This is an example of a service header describing the function and important information regarding the service.</p>
+<p>TCRcluster is a variational autoencoder and agglomerative clustering pipeline. It clusters TCRs together based on latent cosine distances extracted with a VAE.</p>

@@ -10,10 +10,8 @@
  <li>The input needs to be <b>comma separated, with no headers.</b></li>
  <br><li>Load Example data on the Submission page to ensure your data format is correct.</li>
 </ul>
-<a href="/services/TCRcluster-1.0/CDR_lengths.html" target="_blank">List of supported HLA alleles</a><br>
+<a href="/services/TCRcluster-1.0/CDR_lengths.html" target="_blank">List of supported CDR lengths</a><br>
 <br>
- <h4>Submission</h4>
- <img src="/services/ICERFIRE-1.0/submission_info.png" style="width: 110%;">
 
  <!--> list of instructions at the end <-->
 <ol type="A">

@@ -18,17 +18,17 @@ TYPE: Immunological features
 LINK:
 
 # Short description (REQUIRED ENTRY)
-DESCRIPTION: TCR Clusters
+DESCRIPTION: Latent embeddings of TCR sequences and agglomerative clustering
 
 # Software download link (if applicable)
 DOWNLOAD:
 
 # Release or update date
-DATE: 01/01/2000
+DATE: 01/01/2025
 
 # Contact information for scientific or technical help
-AUTHORNAME: Jens Hansen
-AUTHORMAIL: jens@hansen.com
+AUTHORNAME: Yat-tsai Richie Wan
+AUTHORMAIL: riwa@dtu.dk
 TECHNAME: Support
 TECHMAIL: health-master@dtu.dk
 
