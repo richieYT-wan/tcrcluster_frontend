@@ -2,13 +2,13 @@
 
 # The servername field details what the server is called.
 # It is assumed that no other servers are called the same.
-servername: someserver
+servername: TCRcluster-1.0
 
 # The manager value determines which email is to be notified
 # of problems running the command. The email stated here
 # will rescieve reports of any runs failing. This value is
 # mandatory.
-manager: health-master@dtu.dk
+manager: morni@dtu.dk
 
 # The command value states the absolute path to the
 # executable that is to be run with the posted data. This
@@ -17,26 +17,26 @@ command: /var/www/bin/uniwrap
 
 # This option contains a fixed set og options always passed
 # to the server command when it is run.
-#options: -wraparch Linux.x86_64.engine.quick -wrapprog /tools/src/someserver-0.0/server -a -o /var/www/services/services/someserver-0.0/tmp -www services/someserver-0.0/tmp
-options: -wraparch Linux.x86_64.engine.quick -wrapprog /tools/src/servicetemplate-0.0/runscript.sh -www services/testeserver-0.0/tmp $JOBID $REMOTE_ADDR
+options: -wraparch Linux.x86_64.engine -wrapprog /tools/src/TCRcluster-1.0/bashscripts/pipeline_all.sh --jobid $JOBID
+# options: -wraparch Linux.x86_64.engine.quick -wrapprog /tools/src/servicetemplate-0.0/runscript.sh -www services/testeserver-0.0/tmp $JOBID $REMOTE_ADDR
 
-queuefile: Linux.x86_64.engine.quick
+queuefile: Linux.x86_64.engine
 
 # The tmpdir value states what directory to use for
 # temporary files. The user running the webserver must
 # have write access to this directory. The directory is
 # placed relative to ~www/tmp/. This value is mandatory.
-tmpdir: someserver
+tmpdir: TCRcluster-1.0
 
 # This value states what log file is to be used for logging
 # server usage. The logfile is placed relative to
 # ~www/logfiles/. If no logfile is given, the server
 # p roduces no log.
-logfile: someserver.log
+logfile: TCRcluster-1.0.log
 
 # This value states weather the options to the commandline
 # is to be written in the log as well.
-logoptions: yes
+logoptions: no
 
 # This value states weather the manager is to be mailed
 # every time the server is used, and with what options.
@@ -209,12 +209,11 @@ footer: /var/www/services/output_footer.html
 # fastapaste SEQNAME,SEQ EMPTY VALUE
 # is always assumed for compatability reasons.
 
+
+
 # TYPE         NAME            OPTION       VAL     DEFAULT DEFAULTVALUE [ FILTER filter ]
 textarea       pastefile       --infile     VALUE
 file           uploadfile      --infile     VALUE
 radio          model           --model      VALUE # Handling model selection
 radio          threshold_type  --threshold_type  VALUE # Handling threshold settings: Uses default or allows for custom input
 text           t_value         --t_value   VALUE # Custom threshold value is optional and depends on the threshold_type setting
-
-
-#radio thing -s VALUE default -s hum
