@@ -17,10 +17,10 @@ command: /var/www/bin/uniwrap
 
 # This option contains a fixed set og options always passed
 # to the server command when it is run.
-options: -wraparch Linux.x86_64.engine -wrapprog /tools/src/TCRcluster-1.0/bashscripts/pipeline_all.sh --jobid $JOBID
 # options: -wraparch Linux.x86_64.engine.quick -wrapprog /tools/src/servicetemplate-0.0/runscript.sh -www services/testeserver-0.0/tmp $JOBID $REMOTE_ADDR
+options: -wraparch Linux.x86_64.engine.quick -wrapprog /tools/src/TCRcluster-1.0/bashscripts/pipeline_all.sh --jobid $JOBID
 
-queuefile: Linux.x86_64.engine
+queuefile: Linux.x86_64.engine.quick
 
 # The tmpdir value states what directory to use for
 # temporary files. The user running the webserver must
