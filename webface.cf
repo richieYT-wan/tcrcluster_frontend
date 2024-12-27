@@ -213,8 +213,8 @@ footer: /var/www/services/output_footer.html
 textarea       pastefile       --infile     VALUE
 file           uploadfile      --infile     VALUE
 radio          model           --model      VALUE # Handling model selection
-radio          threshold_type  --threshold  VALUE # Handling threshold settings: Uses default or allows for custom input
-text           custom_threshold --t_value   VALUE # Custom threshold value is optional and depends on the threshold_type setting
+radio          threshold_type  --threshold_type  VALUE # Handling threshold settings: Uses default or allows for custom input
+text           t_value         --t_value   VALUE # Custom threshold value is optional and depends on the threshold_type setting
 
 
 #radio thing -s VALUE default -s hum

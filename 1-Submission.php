@@ -65,21 +65,21 @@
   <h3>Options</h3>
 
   VAE model:
-  <input type="radio" name="model" value="osnotrp"> One Stage (No Triplet)
-  <input type="radio" name="model" value="oscstrp"> One Stage (Cosine Triplet)
-  <input type="radio" name="model" value="tsnotrp"> Two Stages (No Triplet)
-  <input type="radio" name="model" value="tscstrp" checked> Two Stages (Cosine Triplet)
+  <input type="radio" name="model" value="OSNOTRP"> One Stage (No Triplet)
+  <input type="radio" name="model" value="OSCSTRP"> One Stage (Cosine Triplet)
+  <input type="radio" name="model" value="TSNOTRP"> Two Stages (No Triplet)
+  <input type="radio" name="model" value="TSCSTRP" checked> Two Stages (Cosine Triplet)
   <br>
   <!-- <input type="checkbox" name="usr_expr" id="usr_expr">  -->
   <!-- New Threshold Section -->
   <h3>Threshold Options</h3>
   <p>
     Set a threshold:
-    <input type="radio" name="threshold_type" value="default" checked onclick="toggleThresholdInput(false)"> Use default (Optimisation)
+    <input type="radio" name="threshold_type" value="None" checked onclick="toggleThresholdInput(false)"> Use default (Optimisation)
     <input type="radio" name="threshold_type" value="custom" onclick="toggleThresholdInput(true)"> Set manually
   </p>
   <p id="thresholdInput" style="display:none;">
-    Enter your threshold value: <input type="number" name="custom_threshold" min="0.01" step="0.01" placeholder="Enter value">
+    Enter your threshold value: <input type="number" name="t_value" min="0.01" step="0.01" placeholder="Enter value">
   </p>
 
   <input type="submit" class="btn btn-success" ng-disabled="invalidForm()" value="Submit" id="submitBtn" />
