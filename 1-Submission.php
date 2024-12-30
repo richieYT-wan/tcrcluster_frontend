@@ -36,7 +36,7 @@
 <h2>Submit data</h2>
 <hr>
 <form enctype="multipart/form-data" action="/cgi-bin/webface2.cgi" method="POST">
-  <input type=hidden name=configfile value="/var/www/services/services/ICERFIRE-1.0/webface.cf">
+  <input type=hidden name=configfile value="/var/www/services/services/TCRcluster-1.0/webface.cf">
 
   <p>
     Paste in the sequences for all CDR chains (A1,A2,A3,B1,B2,B3), and an optional label column. The leading C and trailing F amino acids must be clipped from A3 and B3.
