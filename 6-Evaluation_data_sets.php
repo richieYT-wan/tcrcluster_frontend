@@ -20,11 +20,17 @@ Here, you will find the data set used for training and evaluating the TCRcluster
 <a target=_blank HREF="./supp/TCRcluster_train_data_all_partitions_binders_only.csv">All partitions, binders only</a><br>
 <a target=_blank HREF="./supp/TCRcluster_train_data_all_partitions_with_swap_negs.csv">All partitions, with swapped negatives</a><br>
 
-<h3>Evaluation data</h3>
-<i>Only partitions 0 and 1 were used for evaluating.
+<h3>Validation data</h3>
+<i>Only partition 0 was used for validation</i>
 <p>
-<a target=_blank HREF="./supp/TCRcluster_17peptides_eval_partitions_binders_only.csv">17 peptides subset, binders only</a><br>
-<a target=_blank HREF="./supp/TCRcluster_17peptides_eval_partitions_with_swap_negs.csv">17 peptides subset, with swapped negatives</a><br>
+<a target=_blank HREF="./supp/TCRcluster_17peptides_VALID_PARTITION_binders_only.csv">17 peptides subset, test set binders only (used for model development)</a><br>
+<a target=_blank HREF="./supp/TCRcluster_17peptides_VALID_PARTITION_with_swap_negs.csv">17 peptides subset, with swapped negatives (used for model development)</a><br>
+
+<h3>Test data</h3>
+<i>Only partition 1 was used for testing, never seen in either training or validation</i>
+<p>
+<a target=_blank HREF="./supp/TCRcluster_17peptides_TEST_PARTITION_with_swap_negs.csv">17 peptides subset, test set with swapped negatives (used for figure 2)</a><br>
+<a target=_blank HREF="./supp/TCRcluster_17peptides_TEST_PARTITION_binders_only.csv">17 peptides subset, test set binders only (used for figure 3)</a><br>
 
 
 <h2>References</h2>
