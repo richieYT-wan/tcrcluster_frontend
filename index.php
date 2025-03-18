@@ -161,7 +161,7 @@ Yat-tsai Richie Wan, Morten Nielsen ; Placeholder
 <p><div class="reference">
 <span class="title"> - </span>
 <span class="authors">Yat-tsai Richie Wan, Morten Nielsen</span>,
-<span class="journal">Manuscript in preparation</span>, 2025, Vol. 1, No. 2, 1234-1235.
+<span class="journal">Manuscript in preparation</span>.
 </div></p>
 
 <div class="abstract">
