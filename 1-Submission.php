@@ -38,8 +38,8 @@
 <form enctype="multipart/form-data" action="/cgi-bin/webface2.cgi" method="POST">
   <input type=hidden name=configfile value="/var/www/services/services/TCRcluster-1.0/webface.cf">
 
-  <p>
-    Paste in the sequences for all CDR chains (A1,A2,A3,B1,B2,B3), and an optional label column. The leading C and trailing F amino acids must be clipped from A3 and B3.
+  <p><b>Important: TCRCluster is not meant to handle exact duplicates. If you have exact duplicates (All CDRs), it will NOT work.</b></p>
+  <p> Paste in the sequences for all CDR chains (A1,A2,A3,B1,B2,B3), and an optional label column. The leading C and trailing F amino acids must be clipped from A3 and B3.</p>
     <br>Additionally, the label of each data point can be provided by the user, if available.
     <br>Alternatively, load and example input or upload a file from your local machine.
     <br>Each column should be comma separated, with headers A1,A2,A3,B1,B2,B3,label (label column is optional)
